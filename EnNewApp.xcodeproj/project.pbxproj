@@ -7,15 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		027D9FB76B807E0779A26C23 /* Pods_EnNewApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B998FC83F6194261619E531 /* Pods_EnNewApp.framework */; };
+		AF405E5E2867F52A00332F65 /* PrivateLessonApplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF405E5D2867F52A00332F65 /* PrivateLessonApplyViewController.swift */; };
+		AF405E612867F99D00332F65 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF405E602867F99D00332F65 /* NewsViewController.swift */; };
 		AF49339B283726130023CC43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49339A283726130023CC43 /* AppDelegate.swift */; };
 		AF49339D283726130023CC43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49339C283726130023CC43 /* SceneDelegate.swift */; };
-		AF49339F283726130023CC43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49339E283726130023CC43 /* ViewController.swift */; };
+		AF49339F283726130023CC43 /* SettingValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49339E283726130023CC43 /* SettingValue.swift */; };
 		AF4933A2283726130023CC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4933A0283726130023CC43 /* Main.storyboard */; };
 		AF4933A4283726150023CC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4933A3283726150023CC43 /* Assets.xcassets */; };
 		AF4933A7283726150023CC43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4933A5283726150023CC43 /* LaunchScreen.storyboard */; };
 		AF4933B2283726150023CC43 /* EnNewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933B1283726150023CC43 /* EnNewAppTests.swift */; };
 		AF4933BC283726150023CC43 /* EnNewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933BB283726150023CC43 /* EnNewAppUITests.swift */; };
 		AF4933BE283726150023CC43 /* EnNewAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933BD283726150023CC43 /* EnNewAppUITestsLaunchTests.swift */; };
+		AF4933CD28376F730023CC43 /* MemberRegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933CB28376F730023CC43 /* MemberRegistViewController.swift */; };
+		AF4933CE28376F730023CC43 /* MemberAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933CC28376F730023CC43 /* MemberAuthViewController.swift */; };
+		AF4933D9283770160023CC43 /* RootHome1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933D0283770150023CC43 /* RootHome1ViewController.swift */; };
+		AF4933DA283770160023CC43 /* RootHome0ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933D1283770150023CC43 /* RootHome0ViewController.swift */; };
+		AF4933DB283770160023CC43 /* ApplyUserRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933D3283770160023CC43 /* ApplyUserRuleViewController.swift */; };
+		AF4933DC283770160023CC43 /* PurchasePlan1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933D4283770160023CC43 /* PurchasePlan1ViewController.swift */; };
+		AF4933DD283770160023CC43 /* CoachingPlan0ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933D5283770160023CC43 /* CoachingPlan0ViewController.swift */; };
+		AF4933DE283770160023CC43 /* CoachingPlan2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933D6283770160023CC43 /* CoachingPlan2ViewController.swift */; };
+		AF4933DF283770160023CC43 /* ApplyRootTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933D7283770160023CC43 /* ApplyRootTopViewController.swift */; };
+		AF4933E0283770160023CC43 /* ApplyTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933D8283770160023CC43 /* ApplyTopViewController.swift */; };
+		AF4933EC2837702A0023CC43 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933E32837702A0023CC43 /* ProfileEditViewController.swift */; };
+		AF4933EF2837702A0023CC43 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933E62837702A0023CC43 /* MyPageViewController.swift */; };
+		AF4933FD2837703C0023CC43 /* RatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4933F52837703C0023CC43 /* RatingViewController.xib */; };
+		AF4933FE2837703C0023CC43 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933F62837703C0023CC43 /* ResultViewController.swift */; };
+		AF4933FF2837703C0023CC43 /* PostListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933F72837703C0023CC43 /* PostListTableViewCell.swift */; };
+		AF4934002837703C0023CC43 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933F82837703C0023CC43 /* PostListViewController.swift */; };
+		AF4934022837703C0023CC43 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933FA2837703C0023CC43 /* RatingViewController.swift */; };
+		AF4934032837703C0023CC43 /* SelectedPostListEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933FB2837703C0023CC43 /* SelectedPostListEditViewController.swift */; };
+		AF4934042837703C0023CC43 /* SelectedPostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933FC2837703C0023CC43 /* SelectedPostListViewController.swift */; };
+		AF4934062837D3640023CC43 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4934052837D3640023CC43 /* TopViewController.swift */; };
+		AF4934082837D6910023CC43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF4934072837D6910023CC43 /* GoogleService-Info.plist */; };
+		AF49340A2837D80D0023CC43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4934092837D80D0023CC43 /* User.swift */; };
+		AF49340D2837DD150023CC43 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49340C2837DD150023CC43 /* Page.swift */; };
+		AF49340F2837E04D0023CC43 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49340E2837E04D0023CC43 /* Firebase.swift */; };
+		AF6AA0C8283B1590000D27CC /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AA0C7283B1590000D27CC /* PickerView.swift */; };
+		AF6AA0CA283B7662000D27CC /* PostFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AA0C9283B7662000D27CC /* PostFormViewController.swift */; };
+		AF6AA0CC283B885B000D27CC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AA0CB283B885B000D27CC /* TableViewCell.swift */; };
+		AF6AA0CE283CBF56000D27CC /* YoutubePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AA0CD283CBF56000D27CC /* YoutubePlay.swift */; };
+		AF6AA0D0283CC2C5000D27CC /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AA0CF283CC2C5000D27CC /* Movie.swift */; };
+		AF6AA0D2283D1336000D27CC /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AA0D1283D1335000D27CC /* MyAccountViewController.swift */; };
+		AF6AA0D4283D92BE000D27CC /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AA0D3283D92BE000D27CC /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +70,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B998FC83F6194261619E531 /* Pods_EnNewApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnNewApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0A178E1F6F8E359D918FAB /* Pods-EnNewApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnNewApp.debug.xcconfig"; path = "Target Support Files/Pods-EnNewApp/Pods-EnNewApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9D1D39EAF6263814D70CA27E /* Pods-EnNewApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnNewApp.release.xcconfig"; path = "Target Support Files/Pods-EnNewApp/Pods-EnNewApp.release.xcconfig"; sourceTree = "<group>"; };
+		AF405E5D2867F52A00332F65 /* PrivateLessonApplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateLessonApplyViewController.swift; sourceTree = "<group>"; };
+		AF405E602867F99D00332F65 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		AF493397283726130023CC43 /* EnNewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnNewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF49339A283726130023CC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF49339C283726130023CC43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF49339E283726130023CC43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF49339E283726130023CC43 /* SettingValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingValue.swift; sourceTree = "<group>"; };
 		AF4933A1283726130023CC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF4933A3283726150023CC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF4933A6283726150023CC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +88,37 @@
 		AF4933B7283726150023CC43 /* EnNewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnNewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4933BB283726150023CC43 /* EnNewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnNewAppUITests.swift; sourceTree = "<group>"; };
 		AF4933BD283726150023CC43 /* EnNewAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnNewAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF4933CB28376F730023CC43 /* MemberRegistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberRegistViewController.swift; sourceTree = "<group>"; };
+		AF4933CC28376F730023CC43 /* MemberAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberAuthViewController.swift; sourceTree = "<group>"; };
+		AF4933D0283770150023CC43 /* RootHome1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootHome1ViewController.swift; sourceTree = "<group>"; };
+		AF4933D1283770150023CC43 /* RootHome0ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootHome0ViewController.swift; sourceTree = "<group>"; };
+		AF4933D3283770160023CC43 /* ApplyUserRuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyUserRuleViewController.swift; sourceTree = "<group>"; };
+		AF4933D4283770160023CC43 /* PurchasePlan1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasePlan1ViewController.swift; sourceTree = "<group>"; };
+		AF4933D5283770160023CC43 /* CoachingPlan0ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachingPlan0ViewController.swift; sourceTree = "<group>"; };
+		AF4933D6283770160023CC43 /* CoachingPlan2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachingPlan2ViewController.swift; sourceTree = "<group>"; };
+		AF4933D7283770160023CC43 /* ApplyRootTopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyRootTopViewController.swift; sourceTree = "<group>"; };
+		AF4933D8283770160023CC43 /* ApplyTopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyTopViewController.swift; sourceTree = "<group>"; };
+		AF4933E32837702A0023CC43 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		AF4933E62837702A0023CC43 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		AF4933F52837703C0023CC43 /* RatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingViewController.xib; sourceTree = "<group>"; };
+		AF4933F62837703C0023CC43 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		AF4933F72837703C0023CC43 /* PostListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListTableViewCell.swift; sourceTree = "<group>"; };
+		AF4933F82837703C0023CC43 /* PostListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
+		AF4933FA2837703C0023CC43 /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		AF4933FB2837703C0023CC43 /* SelectedPostListEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedPostListEditViewController.swift; sourceTree = "<group>"; };
+		AF4933FC2837703C0023CC43 /* SelectedPostListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedPostListViewController.swift; sourceTree = "<group>"; };
+		AF4934052837D3640023CC43 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		AF4934072837D6910023CC43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF4934092837D80D0023CC43 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AF49340C2837DD150023CC43 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		AF49340E2837E04D0023CC43 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		AF6AA0C7283B1590000D27CC /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		AF6AA0C9283B7662000D27CC /* PostFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostFormViewController.swift; sourceTree = "<group>"; };
+		AF6AA0CB283B885B000D27CC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		AF6AA0CD283CBF56000D27CC /* YoutubePlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePlay.swift; sourceTree = "<group>"; };
+		AF6AA0CF283CC2C5000D27CC /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		AF6AA0D1283D1335000D27CC /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		AF6AA0D3283D92BE000D27CC /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027D9FB76B807E0779A26C23 /* Pods_EnNewApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +147,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF405E5C2867F4F800332F65 /* PrivateLesson */ = {
+			isa = PBXGroup;
+			children = (
+				AF405E5D2867F52A00332F65 /* PrivateLessonApplyViewController.swift */,
+			);
+			name = PrivateLesson;
+			path = ../PrivateLesson;
+			sourceTree = "<group>";
+		};
+		AF405E5F2867F97900332F65 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				AF405E602867F99D00332F65 /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		AF49338E283726130023CC43 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +171,8 @@
 				AF4933B0283726150023CC43 /* EnNewAppTests */,
 				AF4933BA283726150023CC43 /* EnNewAppUITests */,
 				AF493398283726130023CC43 /* Products */,
+				AF5D091073BABF79602D9720 /* Pods */,
+				C75BBE36FBD2FA5A778F981C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +191,20 @@
 			children = (
 				AF49339A283726130023CC43 /* AppDelegate.swift */,
 				AF49339C283726130023CC43 /* SceneDelegate.swift */,
-				AF49339E283726130023CC43 /* ViewController.swift */,
+				AF4934052837D3640023CC43 /* TopViewController.swift */,
 				AF4933A0283726130023CC43 /* Main.storyboard */,
 				AF4933A3283726150023CC43 /* Assets.xcassets */,
 				AF4933A5283726150023CC43 /* LaunchScreen.storyboard */,
 				AF4933A8283726150023CC43 /* Info.plist */,
+				AF4934072837D6910023CC43 /* GoogleService-Info.plist */,
+				AF49340B2837DCE20023CC43 /* Common */,
+				AF4933CA28376F730023CC43 /* Auth */,
+				AF4933F42837703C0023CC43 /* Post */,
+				AF405E5C2867F4F800332F65 /* PrivateLesson */,
+				AF405E5F2867F97900332F65 /* News */,
+				AF4933E12837702A0023CC43 /* MyPage */,
+				AF4933D2283770160023CC43 /* ApplyTop */,
+				AF4933CF283770150023CC43 /* RootHome */,
 			);
 			path = EnNewApp;
 			sourceTree = "<group>";
@@ -127,6 +226,95 @@
 			path = EnNewAppUITests;
 			sourceTree = "<group>";
 		};
+		AF4933CA28376F730023CC43 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				AF4933CB28376F730023CC43 /* MemberRegistViewController.swift */,
+				AF4933CC28376F730023CC43 /* MemberAuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		AF4933CF283770150023CC43 /* RootHome */ = {
+			isa = PBXGroup;
+			children = (
+				AF4933D0283770150023CC43 /* RootHome1ViewController.swift */,
+				AF4933D1283770150023CC43 /* RootHome0ViewController.swift */,
+			);
+			path = RootHome;
+			sourceTree = "<group>";
+		};
+		AF4933D2283770160023CC43 /* ApplyTop */ = {
+			isa = PBXGroup;
+			children = (
+				AF4933D3283770160023CC43 /* ApplyUserRuleViewController.swift */,
+				AF4933D4283770160023CC43 /* PurchasePlan1ViewController.swift */,
+				AF4933D5283770160023CC43 /* CoachingPlan0ViewController.swift */,
+				AF4933D6283770160023CC43 /* CoachingPlan2ViewController.swift */,
+				AF4933D7283770160023CC43 /* ApplyRootTopViewController.swift */,
+				AF4933D8283770160023CC43 /* ApplyTopViewController.swift */,
+			);
+			path = ApplyTop;
+			sourceTree = "<group>";
+		};
+		AF4933E12837702A0023CC43 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				AF4933E62837702A0023CC43 /* MyPageViewController.swift */,
+				AF6AA0D1283D1335000D27CC /* MyAccountViewController.swift */,
+				AF4933E32837702A0023CC43 /* ProfileEditViewController.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		AF4933F42837703C0023CC43 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				AF6AA0C9283B7662000D27CC /* PostFormViewController.swift */,
+				AF4933F82837703C0023CC43 /* PostListViewController.swift */,
+				AF4933FC2837703C0023CC43 /* SelectedPostListViewController.swift */,
+				AF4933FB2837703C0023CC43 /* SelectedPostListEditViewController.swift */,
+				AF4933F72837703C0023CC43 /* PostListTableViewCell.swift */,
+				AF4933F52837703C0023CC43 /* RatingViewController.xib */,
+				AF4933FA2837703C0023CC43 /* RatingViewController.swift */,
+				AF4933F62837703C0023CC43 /* ResultViewController.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		AF49340B2837DCE20023CC43 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AF49339E283726130023CC43 /* SettingValue.swift */,
+				AF4934092837D80D0023CC43 /* User.swift */,
+				AF49340C2837DD150023CC43 /* Page.swift */,
+				AF6AA0C7283B1590000D27CC /* PickerView.swift */,
+				AF6AA0CB283B885B000D27CC /* TableViewCell.swift */,
+				AF49340E2837E04D0023CC43 /* Firebase.swift */,
+				AF6AA0CD283CBF56000D27CC /* YoutubePlay.swift */,
+				AF6AA0CF283CC2C5000D27CC /* Movie.swift */,
+				AF6AA0D3283D92BE000D27CC /* Button.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AF5D091073BABF79602D9720 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C0A178E1F6F8E359D918FAB /* Pods-EnNewApp.debug.xcconfig */,
+				9D1D39EAF6263814D70CA27E /* Pods-EnNewApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C75BBE36FBD2FA5A778F981C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B998FC83F6194261619E531 /* Pods_EnNewApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +322,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF4933C1283726150023CC43 /* Build configuration list for PBXNativeTarget "EnNewApp" */;
 			buildPhases = (
+				745CA8A435C1D3297807AEAA /* [CP] Check Pods Manifest.lock */,
 				AF493393283726130023CC43 /* Sources */,
 				AF493394283726130023CC43 /* Frameworks */,
 				AF493395283726130023CC43 /* Resources */,
+				B36225489B435216D67EB64F /* [CP] Embed Pods Frameworks */,
+				FF6F9189E613C1E2C34BD83D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,7 +422,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4934082837D6910023CC43 /* GoogleService-Info.plist in Resources */,
 				AF4933A7283726150023CC43 /* LaunchScreen.storyboard in Resources */,
+				AF4933FD2837703C0023CC43 /* RatingViewController.xib in Resources */,
 				AF4933A4283726150023CC43 /* Assets.xcassets in Resources */,
 				AF4933A2283726130023CC43 /* Main.storyboard in Resources */,
 			);
@@ -253,14 +446,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		745CA8A435C1D3297807AEAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnNewApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B36225489B435216D67EB64F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnNewApp/Pods-EnNewApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnNewApp/Pods-EnNewApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EnNewApp/Pods-EnNewApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF6F9189E613C1E2C34BD83D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnNewApp/Pods-EnNewApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnNewApp/Pods-EnNewApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EnNewApp/Pods-EnNewApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF493393283726130023CC43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF49339F283726130023CC43 /* ViewController.swift in Sources */,
+				AF4933DD283770160023CC43 /* CoachingPlan0ViewController.swift in Sources */,
+				AF4933EC2837702A0023CC43 /* ProfileEditViewController.swift in Sources */,
+				AF4933DB283770160023CC43 /* ApplyUserRuleViewController.swift in Sources */,
+				AF6AA0D4283D92BE000D27CC /* Button.swift in Sources */,
+				AF4934002837703C0023CC43 /* PostListViewController.swift in Sources */,
+				AF4933CE28376F730023CC43 /* MemberAuthViewController.swift in Sources */,
+				AF4933EF2837702A0023CC43 /* MyPageViewController.swift in Sources */,
+				AF4933DC283770160023CC43 /* PurchasePlan1ViewController.swift in Sources */,
+				AF4933FE2837703C0023CC43 /* ResultViewController.swift in Sources */,
+				AF6AA0C8283B1590000D27CC /* PickerView.swift in Sources */,
+				AF49340D2837DD150023CC43 /* Page.swift in Sources */,
+				AF49340A2837D80D0023CC43 /* User.swift in Sources */,
+				AF4933CD28376F730023CC43 /* MemberRegistViewController.swift in Sources */,
+				AF49340F2837E04D0023CC43 /* Firebase.swift in Sources */,
+				AF4933DE283770160023CC43 /* CoachingPlan2ViewController.swift in Sources */,
+				AF6AA0D0283CC2C5000D27CC /* Movie.swift in Sources */,
+				AF4933DF283770160023CC43 /* ApplyRootTopViewController.swift in Sources */,
+				AF4934042837703C0023CC43 /* SelectedPostListViewController.swift in Sources */,
+				AF4933E0283770160023CC43 /* ApplyTopViewController.swift in Sources */,
+				AF6AA0CA283B7662000D27CC /* PostFormViewController.swift in Sources */,
+				AF6AA0D2283D1336000D27CC /* MyAccountViewController.swift in Sources */,
+				AF49339F283726130023CC43 /* SettingValue.swift in Sources */,
+				AF6AA0CE283CBF56000D27CC /* YoutubePlay.swift in Sources */,
+				AF4933DA283770160023CC43 /* RootHome0ViewController.swift in Sources */,
 				AF49339B283726130023CC43 /* AppDelegate.swift in Sources */,
+				AF4933FF2837703C0023CC43 /* PostListTableViewCell.swift in Sources */,
+				AF4934062837D3640023CC43 /* TopViewController.swift in Sources */,
 				AF49339D283726130023CC43 /* SceneDelegate.swift in Sources */,
+				AF4934032837703C0023CC43 /* SelectedPostListEditViewController.swift in Sources */,
+				AF405E612867F99D00332F65 /* NewsViewController.swift in Sources */,
+				AF6AA0CC283B885B000D27CC /* TableViewCell.swift in Sources */,
+				AF405E5E2867F52A00332F65 /* PrivateLessonApplyViewController.swift in Sources */,
+				AF4934022837703C0023CC43 /* RatingViewController.swift in Sources */,
+				AF4933D9283770160023CC43 /* RootHome1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +715,7 @@
 		};
 		AF4933C2283726150023CC43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C0A178E1F6F8E359D918FAB /* Pods-EnNewApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,6 +724,8 @@
 				DEVELOPMENT_TEAM = UV2U89362H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EnNewApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fre-Jave-STG";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "配信する動画素材をアップロードします。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -449,8 +735,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = runstech.EnNewApp;
+				MARKETING_VERSION = 0.9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Fre-Jave";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -460,6 +746,7 @@
 		};
 		AF4933C3283726150023CC43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D1D39EAF6263814D70CA27E /* Pods-EnNewApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -468,6 +755,8 @@
 				DEVELOPMENT_TEAM = UV2U89362H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EnNewApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fre-Jave-STG";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "配信する動画素材をアップロードします。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -477,8 +766,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = runstech.EnNewApp;
+				MARKETING_VERSION = 0.9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Fre-Jave";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
