@@ -69,7 +69,7 @@ class PrivateLessonApplyViewController: UIViewController, PurchaseInfomationPuch
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
                 pageProperty.removeinitilizedViewForActivityIndicator(view: view)
 
-                let url = URL(string: "https://lin.ee/DzQBRj3")!
+                let url = URL(string: "https://lin.ee/PojSXVR")!
 
                 if UIApplication.shared.canOpenURL(url) {
                 

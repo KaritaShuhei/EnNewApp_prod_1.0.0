@@ -52,13 +52,15 @@ class SelectedPostListViewController: UIViewController, UITextViewDelegate, UIPo
         
         pageProperty.initilize2(view: view)
         
-        switch userInfomation.currentUid {
-        case "admin1@gmail.com":
+        switch userInfomation.currentEmail {
+        case "demo1@gmail.com":
 
+            print("")
             buttonToPostEdit.isHidden = false
 
         case "admin2@gmail.com":
             
+            print("")
             buttonToPostEdit.isHidden = false
 
         default:

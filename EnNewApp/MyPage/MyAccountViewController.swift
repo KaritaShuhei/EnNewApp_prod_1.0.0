@@ -17,24 +17,28 @@ import AssetsLibrary
 import StoreKit
 import YoutubePlayer_in_WKWebView
 
-class MyAccountViewController: UIViewController {
+class MyAccountViewController: UIViewController, PurchaseInfomationPuchaseStatusReloadedDelegate {
+
     
     let userInfomation = UserInformation()
     let firebaseMethod = FirebaseMethod()
     let pageProperty = PageProperty()
     let youtubePlay = YoutubePlay()
     let movieInfomation = MovieInfomation()
+    let purchaseInfomation = PurchaseInfomation()
 
     @IBOutlet var TableView: UITableView!
     @IBOutlet weak var userNameLabel: UILabel!
 
     
-    var menuArray = ["生年月日","所在地（都道府県）","所在地（市区町村）","メールアドレス","利用規約","プライバシーポリシー"]
+    var menuArray = ["生年月日","所在地（都道府県）","所在地（市区町村）","メールアドレス","会員ID","会員共通パスワード","利用規約","プライバシーポリシー"]
     var userInfoValueArray = [String]()
     
     override func viewDidLoad() {
 
+        purchaseInfomation.purchaseInfomationPuchaseStatusReloadedDelegate = self
         pageProperty.initilize2(view: view)
+        purchaseInfomation.fetchPurchaseStatus()
         TableView.delegate = self
         TableView.dataSource = self
         loadData()
@@ -59,11 +63,37 @@ class MyAccountViewController: UIViewController {
             userInfoValueArray.append(userInfomation.prefecture)
             userInfoValueArray.append(userInfomation.city)
             userInfoValueArray.append(userInfomation.currentEmail)
+            userInfoValueArray.append("")
+            userInfoValueArray.append("")
 //利用規約とプライバシーポリシーのCellには値が入らないのでnilで埋める
             userInfoValueArray.append("")
             userInfoValueArray.append("")
             TableView.reloadData()
             return
+        }
+
+    }
+    
+    func puchaseStatusReloaded() {
+                
+        switch purchaseInfomation.purchaseStatus {
+        case "0":
+
+                return
+
+        case "1":
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
+
+                userInfoValueArray[4] = userInfomation.currentEmail
+                userInfoValueArray[5] = "withpaypay"
+                TableView.reloadData()
+                
+                return
+            }
+
+        default:
+            break
         }
 
     }
@@ -156,8 +186,12 @@ extension MyAccountViewController:UITableViewDelegate,UITableViewDataSource{
             
             print("emailは編集不可")
             
-        }else if indexPath.row == 4{
+        }else if indexPath.row == 4 || indexPath.row == 5{
 
+            print("会員ID、共通パスワードは編集不可")
+
+        }else if indexPath.row == 6{
+            
             let url = URL(string: "https://en-new.com/wp-content/uploads/2022/06/Term_of_Service.pdf")!
 
             if UIApplication.shared.canOpenURL(url) {
@@ -166,8 +200,8 @@ extension MyAccountViewController:UITableViewDelegate,UITableViewDataSource{
 
             }
             
-        }else if indexPath.row == 5{
-
+        }else if indexPath.row == 7{
+            
             let url = URL(string: "https://en-new.com/wp-content/uploads/2022/06/Privacy_Policy.pdf")!
 
             if UIApplication.shared.canOpenURL(url) {

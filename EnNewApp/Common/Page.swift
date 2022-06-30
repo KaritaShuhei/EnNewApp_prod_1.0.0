@@ -180,7 +180,7 @@ public class PageProperty {
         settingButton.setTitle("入会手続きへ", for: .normal)
         settingButton.frame = CGRect(x: 20, y: (viewHeight-viewHeightWithoutTitle)/2 + 100, width: viewWidth - 40, height: 50)
         settingButton.backgroundColor = .systemRed
-        settingButton.cornerRadius = 25
+        settingButton.cornerRadius = 2
         settingButton.setTitleColor(UIColor.white, for: .normal)
         settingButton.contentHorizontalAlignment = .center
         settingButton.addTarget(self, action: #selector(moveToAnotherPageButtonTapped(_:)), for: .touchUpInside)
@@ -191,7 +191,7 @@ public class PageProperty {
         settingButton2.backgroundColor = .white
         settingButton2.borderColor = .systemRed
         settingButton2.borderWidth = 1
-        settingButton2.cornerRadius = 25
+        settingButton2.cornerRadius = 2
         settingButton2.setTitleColor(UIColor.systemRed, for: .normal)
         settingButton2.contentHorizontalAlignment = .center
         settingButton2.addTarget(self, action: #selector(RefreshPageButtonTapped(_:)), for: .touchUpInside)
@@ -249,7 +249,7 @@ public class PageProperty {
         settingButton.setTitle("リトライ", for: .normal)
         settingButton.frame = CGRect(x: 20, y: viewHeight/2 + 150, width: viewWidth - 40, height: 50)
         settingButton.backgroundColor = .systemRed
-        settingButton.cornerRadius = 25
+        settingButton.cornerRadius = 2
         settingButton.setTitleColor(UIColor.white, for: .normal)
         settingButton.contentHorizontalAlignment = .center
         settingButton.addTarget(self, action: #selector(RefreshPageButtonTapped(_:)), for: .touchUpInside)

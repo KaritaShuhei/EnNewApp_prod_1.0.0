@@ -52,8 +52,8 @@ class PostListViewController: UIViewController,PagePropertyMoveToAnotherPageDele
         
         buttonToPostForm.isHidden = true
 
-        switch userInfomation.currentUid {
-        case "admin1@gmail.com":
+        switch userInfomation.currentEmail {
+        case "demo1@gmail.com":
 
             tableViewData()
             buttonToPostForm.isHidden = false
@@ -90,6 +90,8 @@ class PostListViewController: UIViewController,PagePropertyMoveToAnotherPageDele
     
     func puchaseStatusReloaded() {
                 
+        print("purchaseStatus")
+        print(purchaseInfomation.purchaseStatus)
         switch purchaseInfomation.purchaseStatus {
         case "0":
 
