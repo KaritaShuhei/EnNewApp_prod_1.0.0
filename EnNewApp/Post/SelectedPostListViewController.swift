@@ -46,10 +46,27 @@ class SelectedPostListViewController: UIViewController, UITextViewDelegate, UIPo
     @IBOutlet weak var date_yyyyMMddHHmmLabel: UILabel!
     @IBOutlet weak var reviewStarButton: UIButton!
     @IBOutlet weak var youtubePlayerView: WKYTPlayerView!
-
+    @IBOutlet weak var buttonToPostEdit: UIButton!
+    
     override func viewDidLoad() {
         
         pageProperty.initilize2(view: view)
+        
+        switch userInfomation.currentUid {
+        case "admin1@gmail.com":
+
+            buttonToPostEdit.isHidden = false
+
+        case "admin2@gmail.com":
+            
+            buttonToPostEdit.isHidden = false
+
+        default:
+
+            buttonToPostEdit.isHidden = true
+            break
+        }
+        
         super.viewDidLoad()
         
     }
