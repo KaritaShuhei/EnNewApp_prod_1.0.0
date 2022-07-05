@@ -371,7 +371,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRi-rB-FrS" customClass="TPKeyboardAvoidingScrollView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="689"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="559"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1A-mP-dy7">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="6192"/>
@@ -585,16 +585,44 @@ Fre-Jave
                                     <segue destination="YLB-Hp-XYA" kind="show" id="QOk-Hh-Pwx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmz-3I-4IO">
+                                <rect key="frame" x="20" y="625" width="374" height="108"/>
+                                <string key="text">★未成年者（18歳未満）の方がこのアプリを利用するためには親権者の同意が必要になります。また、学校部活動・クラブチームに所属している場合は、その責任者（顧問）の同意を得てから申込を行って下さい。申込の完了に伴い親権者・責任者の同意を得たと判断いたします。
+学校、地域、家庭との連携がとれた安全なやり投環境を作ることを目指しています。ご協力の程よろしくお願いいたします。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bxi-pN-YrL">
+                                <rect key="frame" x="0.0" y="603" width="414" height="2"/>
+                                <color key="backgroundColor" red="0.93669598909999996" green="0.94102018629999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="gGG-UE-12M"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MRx-zh-Feq"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="9VI-Ty-l2T" firstAttribute="top" secondItem="zRi-rB-FrS" secondAttribute="bottom" constant="20" id="A27-h7-BFN"/>
+                            <constraint firstItem="9VI-Ty-l2T" firstAttribute="top" secondItem="zRi-rB-FrS" secondAttribute="bottom" constant="150" id="A27-h7-BFN"/>
+                            <constraint firstItem="MRx-zh-Feq" firstAttribute="trailing" secondItem="Bmz-3I-4IO" secondAttribute="trailing" constant="20" id="Duk-hB-QXK"/>
                             <constraint firstItem="zRi-rB-FrS" firstAttribute="leading" secondItem="PUg-7U-cOT" secondAttribute="leading" id="JFh-cD-7ZX"/>
+                            <constraint firstItem="Bxi-pN-YrL" firstAttribute="leading" secondItem="PUg-7U-cOT" secondAttribute="leading" id="Klq-Ba-AEA"/>
                             <constraint firstItem="zRi-rB-FrS" firstAttribute="top" secondItem="DIZ-CE-lxt" secondAttribute="bottom" id="M6d-CT-cFq"/>
                             <constraint firstItem="9VI-Ty-l2T" firstAttribute="leading" secondItem="MRx-zh-Feq" secondAttribute="leading" constant="20" id="Mgx-69-qBs"/>
+                            <constraint firstItem="Bmz-3I-4IO" firstAttribute="leading" secondItem="MRx-zh-Feq" secondAttribute="leading" constant="20" id="NiQ-p2-CAF"/>
                             <constraint firstItem="MRx-zh-Feq" firstAttribute="bottom" secondItem="9VI-Ty-l2T" secondAttribute="bottom" constant="20" id="Oty-Qk-36Z"/>
+                            <constraint firstItem="Bmz-3I-4IO" firstAttribute="top" secondItem="Bxi-pN-YrL" secondAttribute="bottom" constant="20" id="TgG-wB-4F1"/>
+                            <constraint firstItem="Bxi-pN-YrL" firstAttribute="top" secondItem="zRi-rB-FrS" secondAttribute="bottom" id="Wad-Bc-06J"/>
                             <constraint firstAttribute="trailing" secondItem="zRi-rB-FrS" secondAttribute="trailing" id="ajE-AV-ooo"/>
+                            <constraint firstAttribute="trailing" secondItem="Bxi-pN-YrL" secondAttribute="trailing" id="hbD-ZY-JT5"/>
+                            <constraint firstItem="9VI-Ty-l2T" firstAttribute="top" secondItem="Bmz-3I-4IO" secondAttribute="bottom" constant="20" id="mjy-6V-oDo"/>
                             <constraint firstItem="MRx-zh-Feq" firstAttribute="trailing" secondItem="9VI-Ty-l2T" secondAttribute="trailing" constant="20" id="wkZ-Be-MpB"/>
                         </constraints>
                     </view>
@@ -1214,7 +1242,7 @@ Fre-Jave
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RUNS_logo_tate" translatesAutoresizingMaskIntoConstraints="NO" id="hwL-tb-1Ak">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frejave_logo" translatesAutoresizingMaskIntoConstraints="NO" id="hwL-tb-1Ak">
                                 <rect key="frame" x="0.0" y="303" width="414" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Zhw-IU-cY7"/>
@@ -1258,17 +1286,17 @@ Fre-Jave
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="Ego-er-Vcy" customClass="PostListTableViewCell" customModule="EnNewApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="348"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="353"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ego-er-Vcy" id="g5z-Ps-jSW">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="348"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="353"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9eb-fe-Cgt">
-                                                    <rect key="frame" x="15" y="10" width="384" height="328"/>
+                                                    <rect key="frame" x="15" y="10" width="384" height="333"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公開日：2021/10/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPb-UG-rKI">
-                                                            <rect key="frame" x="15" y="300" width="109" height="18"/>
+                                                            <rect key="frame" x="15" y="305" width="109" height="18"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="18" id="caS-zL-eub"/>
                                                             </constraints>
@@ -1277,7 +1305,7 @@ Fre-Jave
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="やり投げを始めたばかりのあなたへ。基礎から学びましょう。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9l3-2B-mAZ">
-                                                            <rect key="frame" x="15" y="278" width="343.5" height="12"/>
+                                                            <rect key="frame" x="15" y="283" width="343.5" height="12"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="12" id="JEM-Eo-KLJ"/>
                                                             </constraints>
@@ -1286,7 +1314,7 @@ Fre-Jave
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="初級編" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZP-T2-nk4">
-                                                            <rect key="frame" x="15" y="220" width="60" height="20"/>
+                                                            <rect key="frame" x="15" y="225" width="60" height="20"/>
                                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="JQf-fh-Cdf"/>
@@ -1302,7 +1330,7 @@ Fre-Jave
                                                             </userDefinedRuntimeAttributes>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="やり投げとは？？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86q-sz-AHx">
-                                                            <rect key="frame" x="15" y="250" width="122.5" height="18"/>
+                                                            <rect key="frame" x="15" y="255" width="122.5" height="18"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="18" id="Q0m-2C-AMw"/>
                                                             </constraints>
@@ -1311,7 +1339,7 @@ Fre-Jave
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新着" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYV-OL-1yz">
-                                                            <rect key="frame" x="134" y="299" width="50" height="20"/>
+                                                            <rect key="frame" x="134" y="304" width="50" height="20"/>
                                                             <color key="backgroundColor" systemColor="systemRedColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="bJW-yg-0oL"/>
@@ -1327,14 +1355,14 @@ Fre-Jave
                                                             </userDefinedRuntimeAttributes>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PwJ-YD-4P8">
-                                                            <rect key="frame" x="10" y="10" width="364" height="200"/>
+                                                            <rect key="frame" x="10" y="10" width="364" height="205"/>
                                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="200" id="n1i-dn-JKD"/>
+                                                                <constraint firstAttribute="width" secondItem="PwJ-YD-4P8" secondAttribute="height" multiplier="16:9" id="alg-i7-kTm"/>
                                                             </constraints>
                                                         </imageView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yv-je-Ll5">
-                                                            <rect key="frame" x="172" y="90" width="40" height="40"/>
+                                                            <rect key="frame" x="172" y="92.5" width="40" height="40"/>
                                                             <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="AHC-ic-RxY"/>
@@ -1409,7 +1437,7 @@ Fre-Jave
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="postListCell" id="bj4-jb-rs7" customClass="PostListTableViewCell" customModule="EnNewApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="392.5" width="414" height="353"/>
+                                        <rect key="frame" x="0.0" y="397.5" width="414" height="353"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bj4-jb-rs7" id="XUm-T3-jrX">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="353"/>
@@ -2280,36 +2308,36 @@ Fre-Jave
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBz-DX-QvT">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="847"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="910"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNh-ss-CgB" customClass="WKYTPlayerView">
-                                                <rect key="frame" x="0.0" y="63" width="414" height="200"/>
+                                                <rect key="frame" x="0.0" y="63" width="414" height="233"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="200" id="rn5-EM-Pkx"/>
+                                                    <constraint firstAttribute="width" secondItem="WNh-ss-CgB" secondAttribute="height" multiplier="16:9" id="7Kb-pd-aFB"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="動画情報" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m75-Cw-5EV">
-                                                <rect key="frame" x="20" y="283" width="374" height="20"/>
+                                                <rect key="frame" x="20" y="316" width="374" height="20"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第1章：やり投げとは？？？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caq-gy-TV6">
-                                                <rect key="frame" x="110" y="313" width="284" height="18"/>
+                                                <rect key="frame" x="110" y="356" width="284" height="18"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCb-DA-Fq7">
-                                                <rect key="frame" x="20" y="390" width="374" height="2"/>
+                                                <rect key="frame" x="20" y="433" width="374" height="2"/>
                                                 <color key="backgroundColor" red="0.93669598909999996" green="0.94102018629999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="2" id="yU5-sh-Bsn"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Odr-FN-JwD">
-                                                <rect key="frame" x="20" y="313" width="60" height="60"/>
+                                                <rect key="frame" x="20" y="346" width="60" height="60"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4Zq-ve-t0j">
                                                         <rect key="frame" x="12.5" y="13.5" width="35" height="32.5"/>
@@ -2334,26 +2362,26 @@ Fre-Jave
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="やり投げを始めたばかりのあなたへ。基礎から学びましょう。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldj-Ax-0q0">
-                                                <rect key="frame" x="110" y="341" width="284" height="29"/>
+                                                <rect key="frame" x="110" y="384" width="284" height="29"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レッスンサマリー" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v29-aC-NWh">
-                                                <rect key="frame" x="20" y="412" width="374" height="20"/>
+                                                <rect key="frame" x="20" y="455" width="374" height="20"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lIv-XV-LWr">
-                                                <rect key="frame" x="20" y="520" width="374" height="2"/>
+                                                <rect key="frame" x="20" y="573" width="374" height="2"/>
                                                 <color key="backgroundColor" red="0.93669598909999996" green="0.94102018629999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="2" id="CWP-72-Jic"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="luw-Tj-DSq">
-                                                <rect key="frame" x="20" y="442" width="60" height="60"/>
+                                                <rect key="frame" x="20" y="485" width="60" height="60"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.text" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NQy-hu-t4g">
                                                         <rect key="frame" x="12.5" y="12.5" width="35" height="35"/>
@@ -2378,13 +2406,13 @@ Fre-Jave
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="やり投げをやっていて記録を伸ばしたい方、身近に指導者や練習仲間がいない方、初心者で何から始めて良いかが分からない方に捧げる初心者向けやり投げレッスン動画の完全版です。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q23-w4-JSf">
-                                                <rect key="frame" x="110" y="442" width="284" height="57.5"/>
+                                                <rect key="frame" x="110" y="495" width="284" height="57.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sfS-Kv-Vsf">
-                                                <rect key="frame" x="30" y="582.5" width="40" height="39"/>
+                                                <rect key="frame" x="30" y="635.5" width="40" height="39"/>
                                                 <color key="tintColor" systemColor="systemPinkColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="OuU-Hl-1ei"/>
@@ -2397,32 +2425,32 @@ Fre-Jave
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コーチから一言" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0h-Vj-Sb5">
-                                                <rect key="frame" x="20" y="542" width="374" height="20"/>
+                                                <rect key="frame" x="20" y="595" width="374" height="20"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJM-oK-Ssz">
-                                                <rect key="frame" x="20" y="645" width="374" height="2"/>
+                                                <rect key="frame" x="20" y="708" width="374" height="2"/>
                                                 <color key="backgroundColor" red="0.93669598909999996" green="0.94102018629999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="2" id="1Fn-hu-lg3"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fre-Javeでは、やり投を頑張りたい人同士が出会ったり、気軽に専門的な知識を学んだりできます。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDi-2p-8Nk">
-                                                <rect key="frame" x="110" y="582" width="284" height="43"/>
+                                                <rect key="frame" x="110" y="645" width="284" height="43"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="その他情報" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSj-Ob-XBV">
-                                                <rect key="frame" x="20" y="667" width="374" height="20"/>
+                                                <rect key="frame" x="20" y="730" width="374" height="20"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Znx-jS-eAC">
-                                                <rect key="frame" x="20" y="692" width="374" height="75"/>
+                                                <rect key="frame" x="20" y="755" width="374" height="75"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVJ-yu-6eW">
                                                         <rect key="frame" x="93.5" y="0.0" width="280.5" height="75"/>
@@ -2525,7 +2553,7 @@ Fre-Jave
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjY-OJ-bwj">
-                                                <rect key="frame" x="10" y="787" width="394" height="40"/>
+                                                <rect key="frame" x="10" y="850" width="394" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="qrH-8e-UXp"/>
@@ -2552,8 +2580,7 @@ Fre-Jave
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="reviewStarButtonTapped:" destination="8Vk-Xy-4GQ" eventType="touchUpInside" id="PvV-x1-03Y"/>
-                                                    <action selector="reviewStarButtonTapped:" destination="NAm-Z9-RzF" eventType="touchUpInside" id="abP-YV-64B"/>
+                                                    <action selector="reviewStarButtonTapped:" destination="8Vk-Xy-4GQ" eventType="touchUpInside" id="KtE-ct-W1I"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55d-AX-0WJ">
@@ -2607,8 +2634,8 @@ Fre-Jave
                                             <constraint firstItem="Odr-FN-JwD" firstAttribute="leading" secondItem="m75-Cw-5EV" secondAttribute="leading" id="BgP-BF-X46"/>
                                             <constraint firstItem="b0h-Vj-Sb5" firstAttribute="leading" secondItem="v29-aC-NWh" secondAttribute="leading" id="CPa-Ur-sxr"/>
                                             <constraint firstItem="yDi-2p-8Nk" firstAttribute="leading" secondItem="sfS-Kv-Vsf" secondAttribute="trailing" constant="40" id="EaB-0Z-IIg"/>
-                                            <constraint firstItem="caq-gy-TV6" firstAttribute="top" secondItem="Odr-FN-JwD" secondAttribute="top" id="FgP-aA-NO8"/>
-                                            <constraint firstItem="q23-w4-JSf" firstAttribute="top" secondItem="luw-Tj-DSq" secondAttribute="top" id="GJg-VR-Bdd"/>
+                                            <constraint firstItem="caq-gy-TV6" firstAttribute="top" secondItem="Odr-FN-JwD" secondAttribute="top" constant="10" id="FgP-aA-NO8"/>
+                                            <constraint firstItem="q23-w4-JSf" firstAttribute="top" secondItem="luw-Tj-DSq" secondAttribute="top" constant="10" id="GJg-VR-Bdd"/>
                                             <constraint firstItem="eCb-DA-Fq7" firstAttribute="top" secondItem="ldj-Ax-0q0" secondAttribute="bottom" constant="20" id="H31-U3-SXt"/>
                                             <constraint firstItem="v29-aC-NWh" firstAttribute="leading" secondItem="m75-Cw-5EV" secondAttribute="leading" id="HzX-N2-VxZ"/>
                                             <constraint firstItem="luw-Tj-DSq" firstAttribute="leading" secondItem="Odr-FN-JwD" secondAttribute="leading" id="IAe-kh-Glv"/>
@@ -2650,7 +2677,7 @@ Fre-Jave
                                             <constraint firstItem="ldj-Ax-0q0" firstAttribute="leading" secondItem="caq-gy-TV6" secondAttribute="leading" id="qeh-fY-C4V"/>
                                             <constraint firstItem="TJM-oK-Ssz" firstAttribute="top" secondItem="yDi-2p-8Nk" secondAttribute="bottom" constant="20" id="qgh-dt-lUX"/>
                                             <constraint firstItem="iSj-Ob-XBV" firstAttribute="trailing" secondItem="b0h-Vj-Sb5" secondAttribute="trailing" id="tMD-90-4rn"/>
-                                            <constraint firstItem="yDi-2p-8Nk" firstAttribute="top" secondItem="sfS-Kv-Vsf" secondAttribute="top" id="tSL-Ld-Bd4"/>
+                                            <constraint firstItem="yDi-2p-8Nk" firstAttribute="top" secondItem="sfS-Kv-Vsf" secondAttribute="top" constant="10" id="tSL-Ld-Bd4"/>
                                             <constraint firstItem="suf-zH-puZ" firstAttribute="centerY" secondItem="55d-AX-0WJ" secondAttribute="centerY" id="v3e-PI-ZBQ"/>
                                             <constraint firstItem="TJM-oK-Ssz" firstAttribute="leading" secondItem="lIv-XV-LWr" secondAttribute="leading" id="wUT-Ht-zco"/>
                                             <constraint firstItem="eCb-DA-Fq7" firstAttribute="leading" secondItem="Odr-FN-JwD" secondAttribute="leading" id="xEq-LZ-N3W"/>
@@ -2686,6 +2713,7 @@ Fre-Jave
                         <outlet property="commentLabel" destination="yDi-2p-8Nk" id="c3a-MS-ePw"/>
                         <outlet property="date_yyyyMMddHHmmLabel" destination="4rA-XW-8yS" id="uWe-Yi-uQp"/>
                         <outlet property="introductionLabel" destination="ldj-Ax-0q0" id="1DO-LQ-A6W"/>
+                        <outlet property="reviewStarButton" destination="IjY-OJ-bwj" id="Nyn-oe-bbf"/>
                         <outlet property="summuryLabel" destination="q23-w4-JSf" id="lQ5-lT-ou7"/>
                         <outlet property="targetLevelLabel" destination="S4Z-Xl-LbD" id="1gO-cj-1BT"/>
                         <outlet property="titleLabel" destination="34G-Fx-R72" id="hBC-gb-a0U"/>
@@ -3762,9 +3790,6 @@ Fre-Jave
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLB-HO-PZp" customClass="WKYTPlayerView">
                                                 <rect key="frame" x="20" y="148" width="372" height="209.5"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="XLB-HO-PZp" secondAttribute="height" multiplier="16:9" id="jKD-fA-6Wa"/>
-                                                </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8d-50-yuf">
                                                 <rect key="frame" x="352" y="95.5" width="40" height="35"/>
@@ -3815,7 +3840,6 @@ Fre-Jave
                                             <constraint firstItem="2Z3-81-Ecs" firstAttribute="top" secondItem="Afb-0f-qh8" secondAttribute="top" id="RbC-ZS-jgU"/>
                                             <constraint firstAttribute="bottom" secondItem="8Hu-2L-6x6" secondAttribute="bottom" constant="10" id="Ruh-Uc-27i"/>
                                             <constraint firstItem="hJ4-Ih-Ce6" firstAttribute="leading" secondItem="Vax-VU-6ja" secondAttribute="leading" id="TnB-4v-0jh"/>
-                                            <constraint firstItem="XLB-HO-PZp" firstAttribute="width" secondItem="XLB-HO-PZp" secondAttribute="height" multiplier="16:9" id="Uem-G5-p5N"/>
                                             <constraint firstAttribute="trailing" secondItem="LKh-ga-h2S" secondAttribute="trailing" constant="10" id="Vz7-Yj-7mR"/>
                                             <constraint firstItem="hJ4-Ih-Ce6" firstAttribute="top" secondItem="LKh-ga-h2S" secondAttribute="bottom" constant="20" id="cPg-40-W1C"/>
                                             <constraint firstItem="XLd-Ha-lOC" firstAttribute="top" secondItem="aVZ-wx-Bis" secondAttribute="bottom" constant="20" id="dGd-ci-FG9"/>
@@ -4206,9 +4230,6 @@ Fre-Jave
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46X-Yy-pBs" customClass="WKYTPlayerView">
                                                 <rect key="frame" x="20" y="178" width="372" height="209.5"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="46X-Yy-pBs" secondAttribute="height" multiplier="16:9" id="2aW-vB-GHw"/>
-                                                </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90m-fK-nKt">
                                                 <rect key="frame" x="352" y="125.5" width="40" height="35"/>
@@ -4368,7 +4389,7 @@ Fre-Jave
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHV-Kv-ykS">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1039"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1088"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="個別レッスン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikt-br-auO">
                                                 <rect key="frame" x="20" y="20" width="152" height="30"/>
@@ -4389,19 +4410,19 @@ Fre-Jave
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="javelin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="hyD-rD-bCo">
-                                                <rect key="frame" x="30" y="129" width="354" height="150"/>
+                                                <rect key="frame" x="30" y="129" width="354" height="199"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="OkS-n0-6lL"/>
+                                                    <constraint firstAttribute="width" secondItem="hyD-rD-bCo" secondAttribute="height" multiplier="16:9" id="H3y-eD-CC4"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="競技場でFre-Javeの講師からマンツーマンの指導を受けることができます。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpW-hY-2dz">
-                                                <rect key="frame" x="30" y="309" width="354" height="48"/>
+                                                <rect key="frame" x="30" y="358" width="354" height="48"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcC-vT-77R">
-                                                <rect key="frame" x="30" y="387" width="354" height="40"/>
+                                                <rect key="frame" x="30" y="436" width="354" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="9rL-22-cU8"/>
@@ -4423,13 +4444,13 @@ Fre-Jave
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="申込にあたっての注意点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2S-0a-XwP">
-                                                <rect key="frame" x="30" y="457" width="354" height="22"/>
+                                                <rect key="frame" x="30" y="506" width="354" height="22"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Le-eQ-5Ub">
-                                                <rect key="frame" x="30" y="489" width="354" height="530"/>
+                                                <rect key="frame" x="30" y="538" width="354" height="530"/>
                                                 <string key="text">【やり投のコーチに指導依頼ができます】
 このページより、やり投を専門とするコーチに指導依頼をすることができます。
 指導依頼には2種類あります。
@@ -4535,7 +4556,6 @@ Fre-Jave
         <segue reference="dm9-3w-I21"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="RUNS_logo_tate" width="1024" height="1024"/>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="checkmark.seal" catalog="system" width="128" height="128"/>
         <image name="doc.text" catalog="system" width="115" height="128"/>

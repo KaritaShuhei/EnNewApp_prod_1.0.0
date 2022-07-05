@@ -246,7 +246,7 @@ public class PageProperty {
         settingTextLabel.textColor = .black
         settingTextLabel.textAlignment = NSTextAlignment.center
         
-        settingButton.setTitle("リトライ", for: .normal)
+        settingButton.setTitle("OK", for: .normal)
         settingButton.frame = CGRect(x: 20, y: viewHeight/2 + 150, width: viewWidth - 40, height: 50)
         settingButton.backgroundColor = .systemRed
         settingButton.cornerRadius = 2

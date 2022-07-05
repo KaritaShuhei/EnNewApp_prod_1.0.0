@@ -18,7 +18,7 @@ import AssetsLibrary
 import StoreKit
 import YoutubePlayer_in_WKWebView
 
-class PostFormViewController: UIViewController,UITextFieldDelegate, UIScrollViewDelegate, UITextViewDelegate ,DidSelectRowDelegate,ImagePickerMethodDelegate{
+class PostFormViewController: UIViewController,UITextFieldDelegate, UIScrollViewDelegate, UITextViewDelegate ,DidSelectRowDelegate,ImagePickerMethodDelegate,PagePropertyRefreshPageDelegate{
     
     let PickerCompo1 = setPickerCompo1()
     let userInfomation = UserInformation()
@@ -319,6 +319,10 @@ class PostFormViewController: UIViewController,UITextFieldDelegate, UIScrollView
     @IBAction func closePage(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    func refreshPage() {
 
+        self.pageProperty.removeinitilizedViewForActivityIndicator(view: self.view)
+
+    }
     
 }

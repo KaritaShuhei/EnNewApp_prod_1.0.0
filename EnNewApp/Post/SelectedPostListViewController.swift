@@ -53,12 +53,12 @@ class SelectedPostListViewController: UIViewController, UITextViewDelegate, UIPo
         pageProperty.initilize2(view: view)
         
         switch userInfomation.currentEmail {
-        case "demo1@gmail.com":
+        case "s.nakashima@en-new.com":
 
             print("")
             buttonToPostEdit.isHidden = false
 
-        case "admin2@gmail.com":
+        case "frejave@en-new.com":
             
             print("")
             buttonToPostEdit.isHidden = false
@@ -189,7 +189,7 @@ class SelectedPostListViewController: UIViewController, UITextViewDelegate, UIPo
             //            self.starLabel.text = "You rated \(ratingVC.cosmosStarRating.rating) stars"
             let selectedRef = self.firebaseMethod.Ref.child("post").child("\(self.selectedPostID!)").child("review").child("\(self.userInfomation.currentUid)")
             let data = ["review_star":"\(ratingVC.cosmosStarRating.rating)" as Any] as [String : Any]
-            self.firebaseMethodDelegate?.uploadValue(selectedRef: selectedRef, data: data)
+            selectedRef.updateChildValues(data)
             self.reviewStarButton.isHidden = true
         }
         

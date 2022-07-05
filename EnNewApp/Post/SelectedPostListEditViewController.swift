@@ -17,7 +17,7 @@ import AssetsLibrary
 import StoreKit
 import YoutubePlayer_in_WKWebView
 
-class SelectedPostListEditViewController: UIViewController,UITextFieldDelegate, UIScrollViewDelegate, UITextViewDelegate ,DidSelectRowDelegate,ImagePickerMethodDelegate {
+class SelectedPostListEditViewController: UIViewController,UITextFieldDelegate, UIScrollViewDelegate, UITextViewDelegate ,DidSelectRowDelegate,ImagePickerMethodDelegate,PagePropertyRefreshPageDelegate {
     
     
     let PickerCompo1 = setPickerCompo1()
@@ -115,7 +115,11 @@ class SelectedPostListEditViewController: UIViewController,UITextFieldDelegate, 
         present(movieInfomation.imagePickerController, animated: true, completion: nil)
         
     }
-    
+    func refreshPage() {
+
+        self.pageProperty.removeinitilizedViewForActivityIndicator(view: self.view)
+
+    }
     @IBAction func selectedImage(_ sender: Any) {
         
         movieInfomation.movieImageSelected()
@@ -189,6 +193,7 @@ class SelectedPostListEditViewController: UIViewController,UITextFieldDelegate, 
             summuryTextView.text = movieInfomation.summury
             commentTextView.text = movieInfomation.comment
             date_yyyyMMddHHmmLabel.text = movieInfomation.date_yyyyMMddHHmm
+            youtubeIDTextField.text = movieInfomation.youtubeID
             selectedYoutubeID = movieInfomation.youtubeID
             youtubePlayerView.load(withVideoId: "\(selectedYoutubeID ?? "")",playerVars: ["playsinline":1])
 

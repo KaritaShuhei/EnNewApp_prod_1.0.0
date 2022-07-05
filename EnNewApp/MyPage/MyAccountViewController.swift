@@ -131,7 +131,7 @@ class MyAccountViewController: UIViewController, PurchaseInfomationPuchaseStatus
             print("Cancel")
         })
         alert.addTextField { [self] (textField) in
-            textField.text = userInfomation.currentUserName
+            textField.text = userNameLabel.text
             uiTextField = textField
         }
         alert.addAction(cancelAction)

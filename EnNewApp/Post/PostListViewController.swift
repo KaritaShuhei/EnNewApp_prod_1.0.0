@@ -53,12 +53,12 @@ class PostListViewController: UIViewController,PagePropertyMoveToAnotherPageDele
         buttonToPostForm.isHidden = true
 
         switch userInfomation.currentEmail {
-        case "demo1@gmail.com":
+        case "s.nakashima@en-new.com":
 
             tableViewData()
             buttonToPostForm.isHidden = false
 
-        case "admin2@gmail.com":
+        case "frejave@en-new.com":
             
             tableViewData()
 
