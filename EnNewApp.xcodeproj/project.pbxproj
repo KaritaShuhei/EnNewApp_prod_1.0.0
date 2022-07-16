@@ -39,10 +39,10 @@
 		AF4934032837703C0023CC43 /* SelectedPostListEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933FB2837703C0023CC43 /* SelectedPostListEditViewController.swift */; };
 		AF4934042837703C0023CC43 /* SelectedPostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4933FC2837703C0023CC43 /* SelectedPostListViewController.swift */; };
 		AF4934062837D3640023CC43 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4934052837D3640023CC43 /* TopViewController.swift */; };
-		AF4934082837D6910023CC43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF4934072837D6910023CC43 /* GoogleService-Info.plist */; };
 		AF49340A2837D80D0023CC43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4934092837D80D0023CC43 /* User.swift */; };
 		AF49340D2837DD150023CC43 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49340C2837DD150023CC43 /* Page.swift */; };
 		AF49340F2837E04D0023CC43 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49340E2837E04D0023CC43 /* Firebase.swift */; };
+		AF5D3FD328810F0F00AB98C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF5D3FD228810F0F00AB98C5 /* GoogleService-Info.plist */; };
 		AF6AA0C8283B1590000D27CC /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AA0C7283B1590000D27CC /* PickerView.swift */; };
 		AF6AA0CA283B7662000D27CC /* PostFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AA0C9283B7662000D27CC /* PostFormViewController.swift */; };
 		AF6AA0CC283B885B000D27CC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6AA0CB283B885B000D27CC /* TableViewCell.swift */; };
@@ -108,10 +108,10 @@
 		AF4933FB2837703C0023CC43 /* SelectedPostListEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedPostListEditViewController.swift; sourceTree = "<group>"; };
 		AF4933FC2837703C0023CC43 /* SelectedPostListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedPostListViewController.swift; sourceTree = "<group>"; };
 		AF4934052837D3640023CC43 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
-		AF4934072837D6910023CC43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF4934092837D80D0023CC43 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AF49340C2837DD150023CC43 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		AF49340E2837E04D0023CC43 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		AF5D3FD228810F0F00AB98C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF6AA0C7283B1590000D27CC /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		AF6AA0C9283B7662000D27CC /* PostFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostFormViewController.swift; sourceTree = "<group>"; };
 		AF6AA0CB283B885B000D27CC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 				AF4933A3283726150023CC43 /* Assets.xcassets */,
 				AF4933A5283726150023CC43 /* LaunchScreen.storyboard */,
 				AF4933A8283726150023CC43 /* Info.plist */,
-				AF4934072837D6910023CC43 /* GoogleService-Info.plist */,
+				AF5D3FD228810F0F00AB98C5 /* GoogleService-Info.plist */,
 				AF49340B2837DCE20023CC43 /* Common */,
 				AF4933CA28376F730023CC43 /* Auth */,
 				AF4933F42837703C0023CC43 /* Post */,
@@ -422,8 +422,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF4934082837D6910023CC43 /* GoogleService-Info.plist in Resources */,
 				AF4933A7283726150023CC43 /* LaunchScreen.storyboard in Resources */,
+				AF5D3FD328810F0F00AB98C5 /* GoogleService-Info.plist in Resources */,
 				AF4933FD2837703C0023CC43 /* RatingViewController.xib in Resources */,
 				AF4933A4283726150023CC43 /* Assets.xcassets in Resources */,
 				AF4933A2283726130023CC43 /* Main.storyboard in Resources */,
@@ -721,7 +721,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = UV2U89362H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EnNewApp/Info.plist;
@@ -733,6 +733,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -755,7 +756,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = UV2U89362H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EnNewApp/Info.plist;
@@ -767,6 +768,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

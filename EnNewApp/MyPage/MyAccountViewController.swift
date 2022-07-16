@@ -18,7 +18,7 @@ import StoreKit
 import YoutubePlayer_in_WKWebView
 
 class MyAccountViewController: UIViewController, PurchaseInfomationPuchaseStatusReloadedDelegate {
-
+    
     
     let userInfomation = UserInformation()
     let firebaseMethod = FirebaseMethod()
@@ -26,16 +26,16 @@ class MyAccountViewController: UIViewController, PurchaseInfomationPuchaseStatus
     let youtubePlay = YoutubePlay()
     let movieInfomation = MovieInfomation()
     let purchaseInfomation = PurchaseInfomation()
-
+    
     @IBOutlet var TableView: UITableView!
     @IBOutlet weak var userNameLabel: UILabel!
-
     
-    var menuArray = ["生年月日","所在地（都道府県）","所在地（市区町村）","メールアドレス","会員ID","会員共通パスワード","利用規約","プライバシーポリシー"]
+    
+    var menuArray = ["生年月日","所在地（都道府県）","所在地（市区町村）","メールアドレス","会員ID","会員共通パスワード","利用規約","プライバシーポリシー","退会手続き"]
     var userInfoValueArray = [String]()
     
     override func viewDidLoad() {
-
+        
         purchaseInfomation.purchaseInfomationPuchaseStatusReloadedDelegate = self
         pageProperty.initilize2(view: view)
         purchaseInfomation.fetchPurchaseStatus()
@@ -43,15 +43,15 @@ class MyAccountViewController: UIViewController, PurchaseInfomationPuchaseStatus
         TableView.dataSource = self
         loadData()
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-        /// 画面再表示
-     override func viewWillAppear(_ animated: Bool) {
-
-         super.viewWillAppear(animated)
-     }
+    /// 画面再表示
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+    }
     
     func loadData(){
         userInfoValueArray.removeAll()
@@ -63,39 +63,41 @@ class MyAccountViewController: UIViewController, PurchaseInfomationPuchaseStatus
             userInfoValueArray.append(userInfomation.prefecture)
             userInfoValueArray.append(userInfomation.city)
             userInfoValueArray.append(userInfomation.currentEmail)
+            //会員IDと会員共通パスワードのCellはまずnilで埋める（後で課金ユーザーを対象に表示）
             userInfoValueArray.append("")
             userInfoValueArray.append("")
-//利用規約とプライバシーポリシーのCellには値が入らないのでnilで埋める
+            //利用規約とプライバシーポリシーと退会手続きのCellには値が入らないのでnilで埋める
+            userInfoValueArray.append("")
             userInfoValueArray.append("")
             userInfoValueArray.append("")
             TableView.reloadData()
             return
         }
-
+        
     }
     
     func puchaseStatusReloaded() {
-                
+        
         switch purchaseInfomation.purchaseStatus {
         case "0":
-
-                return
-
+            
+            return
+            
         case "1":
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
-
+                
                 userInfoValueArray[4] = userInfomation.currentEmail
                 userInfoValueArray[5] = "withpaypay"
                 TableView.reloadData()
                 
                 return
             }
-
+            
         default:
             break
         }
-
+        
     }
     
     @IBAction func closePage(_ sender: Any) {
@@ -103,7 +105,7 @@ class MyAccountViewController: UIViewController, PurchaseInfomationPuchaseStatus
     }
     
     @IBAction func userNameEditButtonTapped(_ sender: Any) {
-
+        
         var uiTextField = UITextField()
         let alert = UIAlertController(title: "入力情報を修正する", message: "", preferredStyle: .alert)
         let defaultAction = UIAlertAction(title: "完了", style: .default) { (action) in
@@ -138,78 +140,125 @@ class MyAccountViewController: UIViewController, PurchaseInfomationPuchaseStatus
         alert.addAction(defaultAction)
         present(alert, animated: true, completion: nil)
     }
-
-
+    
+    
 }
 extension MyAccountViewController:UITableViewDelegate,UITableViewDataSource{
     
     func numberOfSections(in myTableView: UITableView) -> Int {
         return 1
     }
-
+    
     func tableView(_ myTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuArray.count
     }
-                
-       
-    func tableView(_ myTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
+    
+    func tableView(_ myTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = self.TableView.dequeueReusableCell(withIdentifier: "myAccountCell", for: indexPath as IndexPath) as? MyAccountTableViewCell
         cell!.titleLabel.text = self.menuArray[indexPath.row]
         if userInfoValueArray != []{
-
+            
             cell!.registerInfoLabel.text = self.userInfoValueArray[indexPath.row]
-
+            
         }
-//        if indexPath.row == 0{
-//            cell!.registerInfoLabel.text = userInfomation.birthday
-//            cell!.ImageView.image = UIImage(systemName:"person.crop.square")
-//        }else if indexPath.row == 1{
-//            cell!.registerInfoLabel.text = userInfomation.prefecture + userInfomation.city
-//            cell!.ImageView.image = UIImage(systemName:"calendar")
-//        }else if indexPath.row == 2{
-//            cell!.registerInfoLabel.text = userInfomation.currentEmail
-//            cell!.ImageView.image = UIImage(systemName:"doc.plaintext")
-//        }else if indexPath.row == 3{
-//            cell!.registerInfoLabel.text = ""
-//            cell!.ImageView.image = UIImage(systemName:"doc.plaintext")
-//        }else if indexPath.row == 4{
-//            cell!.registerInfoLabel.text = ""
-//            cell!.ImageView.image = UIImage(systemName:"doc.plaintext")
-//        }
+        //        if indexPath.row == 0{
+        //            cell!.registerInfoLabel.text = userInfomation.birthday
+        //            cell!.ImageView.image = UIImage(systemName:"person.crop.square")
+        //        }else if indexPath.row == 1{
+        //            cell!.registerInfoLabel.text = userInfomation.prefecture + userInfomation.city
+        //            cell!.ImageView.image = UIImage(systemName:"calendar")
+        //        }else if indexPath.row == 2{
+        //            cell!.registerInfoLabel.text = userInfomation.currentEmail
+        //            cell!.ImageView.image = UIImage(systemName:"doc.plaintext")
+        //        }else if indexPath.row == 3{
+        //            cell!.registerInfoLabel.text = ""
+        //            cell!.ImageView.image = UIImage(systemName:"doc.plaintext")
+        //        }else if indexPath.row == 4{
+        //            cell!.registerInfoLabel.text = ""
+        //            cell!.ImageView.image = UIImage(systemName:"doc.plaintext")
+        //        }
         return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            
+        
         if indexPath.row == 3{
             
             print("emailは編集不可")
             
         }else if indexPath.row == 4 || indexPath.row == 5{
-
+            
             print("会員ID、共通パスワードは編集不可")
-
+            
         }else if indexPath.row == 6{
             
             let url = URL(string: "https://en-new.com/wp-content/uploads/2022/06/Term_of_Service.pdf")!
-
-            if UIApplication.shared.canOpenURL(url) {
             
+            if UIApplication.shared.canOpenURL(url) {
+                
                 UIApplication.shared.open(url)
-
+                
             }
             
         }else if indexPath.row == 7{
             
             let url = URL(string: "https://en-new.com/wp-content/uploads/2022/06/Privacy_Policy.pdf")!
-
-            if UIApplication.shared.canOpenURL(url) {
             
+            if UIApplication.shared.canOpenURL(url) {
+                
                 UIApplication.shared.open(url)
-
+                
             }
             
+        }else if indexPath.row == 8{
+            
+            let alert: UIAlertController = UIAlertController(title: "確認", message: "アプリを退会していいですか？退会する場合、ユーザーに関するデータは全て削除されます。", preferredStyle:  UIAlertController.Style.alert)
+            
+            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{ [self]
+                (action: UIAlertAction!) -> Void in
+                
+                self.pageProperty.initilize1(view: view)
+                
+                let user = Auth.auth().currentUser
+                
+                user?.delete { error in
+                    if let error = error {
+                        self.pageProperty.removeinitilizedViewForActivityIndicator(view: self.view)
+                        // An error happened.
+                    } else {
+                        // Account deleted.
+                        
+                        self.firebaseMethod.Ref.child("user").child(self.userInfomation.currentUid).removeValue() {
+                            (error:Error?, ref:DatabaseReference) in
+                            if let error = error {
+                                print("Data could not be saved: \(error).")
+                            } else {
+                                print("Data saved successfully!")
+                            }
+                        }
+                        
+                        self.pageProperty.removeinitilizedViewForActivityIndicator(view: self.view)
+                        let sceneDelegate = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.delegate as? SceneDelegate
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        // StoryboardIDをwithIdentifierで指定します
+                        let vc = storyboard.instantiateViewController(withIdentifier: "topView")
+                        sceneDelegate?.switchViewController(viewController: vc)
+                        
+                    }
+                }
+
+                print("OK")
+            })
+            let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
+                (action: UIAlertAction!) -> Void in
+                print("Cancel")
+            })
+            alert.addAction(cancelAction)
+            alert.addAction(defaultAction)
+            present(alert, animated: true, completion: nil)
+
         }else{
             
             var uiTextField = UITextField()
@@ -242,7 +291,7 @@ extension MyAccountViewController:UITableViewDelegate,UITableViewDataSource{
                             self.loadData()
                         }
                     }
-
+                    
                 }else if self.menuArray[indexPath.row] == "所在地（市区町村）"{
                     
                     let data0 = ["city":"\(uiTextField.text ?? "")"] as [String : Any]
@@ -255,7 +304,7 @@ extension MyAccountViewController:UITableViewDelegate,UITableViewDataSource{
                             self.loadData()
                         }
                     }
-
+                    
                 }
                 
             }
@@ -270,40 +319,68 @@ extension MyAccountViewController:UITableViewDelegate,UITableViewDataSource{
             alert.addAction(cancelAction)
             alert.addAction(defaultAction)
             present(alert, animated: true, completion: nil)
-
+            
             
         }
-
-//        selectedPostID = dicArray[(twoDimArray_re[indexPath.row][0] as? String)!]?["postID"] as? String
-//        performSegue(withIdentifier: "toSelectedPostListView", sender: nil)
-
+        
+        //        selectedPostID = dicArray[(twoDimArray_re[indexPath.row][0] as? String)!]?["postID"] as? String
+        //        performSegue(withIdentifier: "toSelectedPostListView", sender: nil)
+        
     }
-
-    @IBAction func logoutButtonTapped(_ sender: Any) {
-
-                let alert: UIAlertController = UIAlertController(title: "確認", message: "ログアウトしていいですか？", preferredStyle:  UIAlertController.Style.alert)
-
-                let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
-                    (action: UIAlertAction!) -> Void in
-
-                    do{
-                        try Auth.auth().signOut()
-
-                        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
-
-                    }catch let error as NSError{
-                        print(error)
-                    }
-                    print("OK")
-                })
-                let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
-                    (action: UIAlertAction!) -> Void in
-                    print("Cancel")
-                })
-                alert.addAction(cancelAction)
-                alert.addAction(defaultAction)
-                present(alert, animated: true, completion: nil)
-            
-    }
+    
+//    @IBAction func logoutButtonTapped(_ sender: Any) {
+//
+//        let alert: UIAlertController = UIAlertController(title: "確認", message: "アプリを退会していいですか？退会する場合、ユーザーに関するデータは全て削除されます。", preferredStyle:  UIAlertController.Style.alert)
+//
+//        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{ [self]
+//            (action: UIAlertAction!) -> Void in
+//
+//            self.pageProperty.initilize1(view: view)
+//
+//            let user = Auth.auth().currentUser
+//
+//            user?.delete { error in
+//                if let error = error {
+//                    // An error happened.
+//                } else {
+//                    // Account deleted.
+//
+//                    self.firebaseMethod.Ref.child("user").child(self.userInfomation.currentUid).removeValue() {
+//                        (error:Error?, ref:DatabaseReference) in
+//                        if let error = error {
+//                            print("Data could not be saved: \(error).")
+//                        } else {
+//                            print("Data saved successfully!")
+//                        }
+//                    }
+//
+//                    self.pageProperty.removeinitilizedViewForActivityIndicator(view: self.view)
+//                    let sceneDelegate = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.delegate as? SceneDelegate
+//                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                    // StoryboardIDをwithIdentifierで指定します
+//                    let vc = storyboard.instantiateViewController(withIdentifier: "topView")
+//                    sceneDelegate?.switchViewController(viewController: vc)
+//
+//                }
+//            }
+//            do{
+//                try Auth.auth().signOut()
+//
+//                self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+//
+//            }catch let error as NSError{
+//                print(error)
+//            }
+//            print("OK")
+//        })
+//        let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
+//            (action: UIAlertAction!) -> Void in
+//            print("Cancel")
+//        })
+//        alert.addAction(cancelAction)
+//        alert.addAction(defaultAction)
+//        present(alert, animated: true, completion: nil)
+//
+//    }
     
 }

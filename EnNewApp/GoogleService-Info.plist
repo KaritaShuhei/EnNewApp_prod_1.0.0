@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>632332921152-bm5kp7jac9vc2igo4ulqvvgc0292dpj0.apps.googleusercontent.com</string>
+	<string>180321095265-nac641d6ghue1qchks7e9fg8dcbkatgo.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.632332921152-bm5kp7jac9vc2igo4ulqvvgc0292dpj0</string>
+	<string>com.googleusercontent.apps.180321095265-nac641d6ghue1qchks7e9fg8dcbkatgo</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDOmmtg2ZgItdeuL4aB6C7OWHcV8C1aYes</string>
+	<string>AIzaSyB7FcenGtdFCdhgRSPmYSkjiOVwq0EbjY0</string>
 	<key>GCM_SENDER_ID</key>
-	<string>632332921152</string>
+	<string>180321095265</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.ennewapp-stg</string>
+	<string>com.Fre-Jave</string>
 	<key>PROJECT_ID</key>
-	<string>ennew-stg</string>
+	<string>fre-jave-prod</string>
 	<key>STORAGE_BUCKET</key>
-	<string>ennew-stg.appspot.com</string>
+	<string>fre-jave-prod.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:632332921152:ios:9c303cc479300498fbf2a5</string>
-	<key>DATABASE_URL</key>
-	<string>https://ennew-stg-default-rtdb.firebaseio.com</string>
+	<string>1:180321095265:ios:ea922d0a3753680532a420</string>
 </dict>
 </plist>
