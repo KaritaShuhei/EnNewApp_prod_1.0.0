@@ -105,7 +105,8 @@ class MemberRegistViewController: UIViewController,FUIAuthDelegate ,DidSelectRow
     
     @IBAction func registButtonTapped(_ sender: Any) {
         self.view.endEditing(true)
-        if nameTextField.text == "" || birthdayTextField.text == ""  || emailTextField.text == "" || prefectureTextField.text == "" || cityTextField.text == "" || passTextField.text == ""{
+//        birthdayTextField、prefectureTextField、cityTextFieldはOptional（任意項目）
+        if nameTextField.text == ""  || emailTextField.text == "" || passTextField.text == ""{
             let alert: UIAlertController = UIAlertController(title: "確認", message: "空欄の項目があります。", preferredStyle:  UIAlertController.Style.alert)
             let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
                 (action: UIAlertAction!) -> Void in
